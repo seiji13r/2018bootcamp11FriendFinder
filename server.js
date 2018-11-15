@@ -5,20 +5,23 @@ require("dotenv").config();
 var express = require("express");
 var path = require("path");
 
-// Relative Directory Names
-var publicDir = "app/public/";
-var dataDir = "app/data/";
-var routingDir = "app/routing/"
-
 // Sets up the Express App
 // =============================================================
 var app = express();
 PORT = process.env.PORT || 3300;
 
-// Basic route that sends the user first to the AJAX Page
-app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, publicDir, "home.html"));
-});
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// Require the functions that contains the Application Routes
+htmlRoutes = require(path.join(__dirname, 'app/routing/htmlRoutes'));
+apiRoutes = require(path.join(__dirname, 'app/routing/apiRoutes'));
+
+// Pass the express application to define the Routes.
+htmlRoutes(app);
+apiRoutes(app);
+
 
 // Starts the server to begin listening
 // =============================================================
