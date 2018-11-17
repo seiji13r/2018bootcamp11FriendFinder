@@ -14,7 +14,7 @@
 # Application Overview
 
 # Live Server
-[https://friend-finder-seiji.herokuapp.com/](https://friend-finder-seiji.herokuapp.com/)
+[https://seiji-friend-finder.herokuapp.com/](https://seiji-friend-finder.herokuapp.com/)
 
 # Requirements
 
