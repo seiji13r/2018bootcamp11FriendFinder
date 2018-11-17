@@ -7,7 +7,7 @@
 - [Installation](#installation)
 - [Development Process](#development-process)
 - [Development NOTES](#development-notes)
-    - [totalDifference function](#totaldifference-function)
+  - [totalDifference function](#totaldifference-function)
 
 <!-- /TOC -->
 
@@ -21,7 +21,7 @@
 
 # Installation
 ```console
-git clone git@github.com:seiji13r/2018bootcampFriendFinder.git
+git clone git@github.com:seiji13r/2018bootcamp11FriendFinder.git
 cd 2018bootcampFriendFinder
 npm -i
 
