@@ -65,7 +65,7 @@ node server.js
 
 ## totalDifference function
 
-This function receives the New User Object and an existing Friend Object with its corresponding Index in the friendsArray, this way wa can locate the best match in the database.
+This function receives the New User Object and an existing Friend Object with its corresponding Index in the friendsArray, this way we can locate the best match in the database.
 
 ```javascript
 function totalDifference(userNew, friend, friendIndex){
