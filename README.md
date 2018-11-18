@@ -4,20 +4,32 @@
 - [Application Overview](#application-overview)
 - [Live Server](#live-server)
 - [Requirements](#requirements)
+- [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Development Process](#development-process)
 - [Development NOTES](#development-notes)
   - [totalDifference function](#totaldifference-function)
+  - [Array Functions](#array-functions)
 
 <!-- /TOC -->
 
 # Application Overview
+
+Friend Finder is a web based app which allow you to find the best Friend Match in the Application Users Database.
+
+You will be asked 10 self defining questions, your answers will be compared with the ones provided by other app users to find the best match.
+
 
 # Live Server
 [https://seiji-friend-finder.herokuapp.com/](https://seiji-friend-finder.herokuapp.com/)
 
 # Requirements
 
+* NodeJS 8.x or higher.
+
+# Dependencies
+* [Express](https://expressjs.com/en/starter/installing.html)
+* [Path](https://github.com/jinder/path)
 
 # Installation
 ```console
@@ -70,3 +82,10 @@ function totalDifference(userNew, friend, friendIndex){
   }
 }
 ```
+
+## Array Functions
+* [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+* [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+* [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+* [sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+* [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
