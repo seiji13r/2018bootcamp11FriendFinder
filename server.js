@@ -10,6 +10,9 @@ var path = require("path");
 var app = express();
 PORT = process.env.PORT || 3300;
 
+// Serve static content for the app from the "publicassets" directory in the application directory.
+app.use(express.static("app/publicassets"));
+
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

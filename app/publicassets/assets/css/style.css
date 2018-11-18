@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.container{
+    margin-top: 80px;
+}
+
+.jumbotron{
+    color: aliceblue;
+    background-color: darkblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.match-img {
+    width: 100%;
+}
